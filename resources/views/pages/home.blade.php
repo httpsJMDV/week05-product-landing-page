@@ -1,4 +1,4 @@
-﻿@extends('layouts.app')
+@extends('layouts.app')
 
 @section('content')
     <!-- Hero Section -->
@@ -226,19 +226,20 @@
                 :dark="true"
             />
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-center max-w-6xl mx-auto pt-4">
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto pt-6">
                 <!-- Tier 1: Basic Cut -->
                 <x-pricing-card 
                     name="Basic Cut"
                     price="250"
                     duration="30 Mins"
-                    description="Quick, sharp neighborhood haircut for gentlemen on the go."
+                    description="Quick, razor-sharp neighborhood haircut tailored to your head shape and lifestyle."
+                    image="assets/images/gallery-1.jpg"
                     :featured="false"
                     :features="[
-                        'Precision Consultation & Scissors / Clippers Cut',
-                        'Straight-Razor Neckline Lineup & Edging',
-                        'Cooling Tonic Splash & Blow Dry Finish',
-                        'Light Water-Based Pomade or Matte Wax Styling',
+                        'Bespoke consultation & master clipper / scissor cut',
+                        'Straight-razor neckline cleanup & crisp edging',
+                        'Cooling botanical tonic splash & blow dry finish',
+                        'Light water-based pomade or matte wax styling',
                         'Sanitized single-use razor blade guaranteed'
                     ]"
                     delay="100"
@@ -249,16 +250,17 @@
                     name="Signature Grooming"
                     price="450"
                     duration="55 Mins"
-                    description="The ultimate client favorite: haircut, steaming shave, and scalp massage."
+                    description="Our celebrated chair favorite: full precision cut, steaming shave, and soothing scalp relaxation."
+                    image="assets/images/gallery-4.jpg"
                     :featured="true"
                     badge="Most Booked"
                     :features="[
                         'Everything in the Basic Cut package',
-                        'Signature Steamed Eucalyptus Hot Towel Treatment',
-                        'Traditional Straight-Razor Beard or Cheek Lineup Shave',
-                        'Soothing Post-Shave Aloe Balm & Alcohol-Free Toner',
-                        'Relaxing 5-Minute Shoulder & Neck Tension Massage',
-                        'Complimentary Cold Brew Coffee or Iced Tea'
+                        'Steamed eucalyptus aromatic hot towel therapy',
+                        'Traditional straight-razor cheek & beard lineup shave',
+                        'Soothing post-shave aloe balm & alcohol-free toner',
+                        'Relaxing 5-minute shoulder & neck tension acupressure',
+                        'Complimentary iced brew or refreshment'
                     ]"
                     delay="200"
                 />
@@ -268,18 +270,43 @@
                     name="VIP Lounge Experience"
                     price="750"
                     duration="80 Mins"
-                    description="Full executive restoration package with priority chair booking."
+                    description="Complete head-to-shoulder executive restoration package with priority chair booking."
+                    image="assets/images/gallery-5.jpg"
                     :featured="false"
                     :features="[
-                        'Master Barber Bespoke Haircut & Scissor Layering',
-                        'Full Straight-Razor Hot & Cold Towel Double Shave',
-                        'Deep Scalp Detox Wash & Conditioning Treatment',
-                        'Facial Steam, Charcoal Clay Nose Strip & Moisturizer',
-                        'Extended 15-Minute Head, Neck, & Arm Acupressure',
-                        'Priority booking chair reservation & complimentary beverage'
+                        'Master Barber bespoke haircut & textured scissor layering',
+                        'Full straight-razor double hot & cold towel shave',
+                        'Deep scalp detox wash & revitalizing conditioning treatment',
+                        'Facial steam, clay pore treatment & hydrating moisturizer',
+                        'Extended 15-minute head, neck & arm acupressure massage',
+                        'Guaranteed priority chair reservation & beverage of choice'
                     ]"
                     delay="300"
                 />
+            </div>
+
+            <!-- Guarantee & Transparency Banner -->
+            <div class="mt-14 max-w-5xl mx-auto rounded-3xl bg-stone-900/90 border border-stone-800 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden" data-aos="fade-up">
+                <div class="flex items-center gap-4 text-left">
+                    <div class="w-12 h-12 rounded-2xl bg-[#7A1F2B] text-[#C9A227] flex items-center justify-center text-xl font-bold flex-shrink-0 shadow-md">
+                        💈
+                    </div>
+                    <div>
+                        <h4 class="font-heading font-extrabold text-base sm:text-lg text-[#F5F0E8]">Every Package Includes Full Finishing Service</h4>
+                        <p class="text-xs sm:text-sm text-stone-400 font-sans mt-0.5">Straight-razor neck taper, warm lather shave, cooling botanical tonic, and artisan pomade styling.</p>
+                    </div>
+                </div>
+                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs font-semibold text-stone-300 flex-shrink-0 pt-2 md:pt-0 border-t md:border-t-0 border-stone-800 w-full md:w-auto">
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-800 text-stone-200 border border-stone-700">
+                        <strong class="text-[#C9A227]">&#10003;</strong> No Hidden Charges
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-800 text-stone-200 border border-stone-700">
+                        <strong class="text-[#C9A227]">&#10003;</strong> GCash / Maya / Cash
+                    </span>
+                    <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-800 text-[#C9A227] border border-[#C9A227]/30">
+                        <strong>10% OFF</strong> Senior & Student Weekday Mornings
+                    </span>
+                </div>
             </div>
         </div>
     </section>
