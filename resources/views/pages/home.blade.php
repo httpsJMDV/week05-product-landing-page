@@ -219,14 +219,34 @@
         <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-[#7A1F2B]/15 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <x-section-heading 
-                eyebrow="Transparent Rates" 
-                title="Craft Grooming Packages"
-                description="Straightforward pricing with no hidden charges. Every package comes with neck cleanup, hot lather razor edging, and artisan pomade styling."
-                :dark="true"
-            />
+            <!-- Modern Header with Pill Highlights -->
+            <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
+                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7A1F2B]/30 border border-[#C9A227]/40 text-[#C9A227] text-xs uppercase font-bold tracking-widest mb-4 shadow-sm">
+                    <span class="w-1.5 h-1.5 rounded-full bg-[#C9A227] animate-pulse"></span>
+                    Transparent Rates &bull; Honest Pricing
+                </div>
+                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#F5F0E8] tracking-tight leading-[1.15]">
+                    Craft Grooming Packages
+                </h2>
+                <p class="mt-4 text-base sm:text-lg text-stone-300 font-sans leading-relaxed">
+                    Straightforward pricing with no hidden charges. Every package comes with neck cleanup, hot lather razor edging, and artisan pomade styling.
+                </p>
 
-            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch max-w-6xl mx-auto pt-6">
+                <!-- Value Pill Badges -->
+                <div class="mt-6 flex flex-wrap items-center justify-center gap-2.5 text-xs text-stone-300 font-medium">
+                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
+                        <span class="text-[#C9A227]">&#10003;</span> Razor Neckline Cleanup Included
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
+                        <span class="text-[#C9A227]">&#10003;</span> Steamed Lather Edging
+                    </span>
+                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
+                        <span class="text-[#C9A227]">&#10003;</span> Pomade / Matte Styling
+                    </span>
+                </div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto pt-2">
                 <!-- Tier 1: Basic Cut -->
                 <x-pricing-card 
                     name="Basic Cut"
