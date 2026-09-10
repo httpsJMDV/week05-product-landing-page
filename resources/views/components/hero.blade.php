@@ -1,4 +1,4 @@
-﻿<section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#1C1917] text-[#F5F0E8] py-20 lg:py-28">
+<section id="home" class="relative min-h-[90vh] flex items-center justify-center overflow-hidden bg-[#1C1917] text-[#F5F0E8] py-20 lg:py-28">
     <!-- Looping Muted Background Video Container -->
     <div class="absolute inset-0 w-full h-full overflow-hidden z-0 pointer-events-none">
         {{-- TODO: replace with AI-generated barbershop ambience clip (e.g. via Runway, Pika, or Sora) or real shop footage — 10-15s seamless loop, muted, dimmed with a dark overlay so hero text stays readable --}}
@@ -7,12 +7,12 @@
             muted 
             loop 
             playsinline 
-            poster="{{ asset('assets/images/hero-poster.svg') }}" 
+            poster="{{ asset('assets/images/hero-poster.jpg') }}" 
             class="w-full h-full object-cover object-center scale-105 filter brightness-[0.45] contrast-110"
         >
             <source src="{{ asset('assets/video/hero-loop.mp4') }}" type="video/mp4">
             <!-- Fallback image for older browsers -->
-            <img src="{{ asset('assets/images/hero-poster.svg') }}" alt="Kuya Lito's Barbershop Ambience" class="w-full h-full object-cover opacity-40">
+            <img src="{{ asset('assets/images/hero-poster.jpg') }}" alt="Kuya Lito's Barbershop Ambience" class="w-full h-full object-cover opacity-40">
         </video>
 
         <!-- Deep atmospheric vignettes and gradient overlays to guarantee WCAG AA text contrast -->

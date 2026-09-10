@@ -1,10 +1,10 @@
-﻿@props([
+@props([
     'testimonials' => [
         [
             'name' => 'Jerome Santos',
             'role' => 'Regular Customer, 3 years',
             'rating' => 5,
-            'avatar' => 'assets/images/avatar-1.svg',
+            'avatar' => 'assets/images/avatar-1.jpg',
             'quote' => 'Kuya Lito has been cutting my hair since 2021. You will not find this level of razor precision anywhere else in Pasig. The hot towel eucalyptus finish after a taper fade is pure relaxation after a long work week.',
             'cut' => 'Signature Grooming Package'
         ],
@@ -12,7 +12,7 @@
             'name' => 'Mark Anthony Reyes',
             'role' => 'Father & Son Regulars',
             'rating' => 5,
-            'avatar' => 'assets/images/avatar-2.svg',
+            'avatar' => 'assets/images/avatar-2.jpg',
             'quote' => 'Brought my 7-year-old son here for his first barbershop experience. The barbers were incredibly patient, made him laugh, and gave him the sharpest gentleman cut. Now Saturday chair visits are our family tradition.',
             'cut' => 'Kid-Friendly & Master Fade'
         ],
@@ -20,7 +20,7 @@
             'name' => 'Danilo Ramos',
             'role' => 'First-Time Walk-In',
             'rating' => 5,
-            'avatar' => 'assets/images/avatar-3.svg',
+            'avatar' => 'assets/images/avatar-3.jpg',
             'quote' => 'I walked in without an appointment on a busy Friday night. Zero attitude, warm greeting, and Barber Jun took his time to understand my hair crown flow. Cleanest taper fade I have had in years. Found my permanent shop.',
             'cut' => 'Low Taper Fade & Lineup'
         ],
@@ -28,7 +28,7 @@
             'name' => 'Christian Cruz',
             'role' => 'Loyalty Member, 2 years',
             'rating' => 5,
-            'avatar' => 'assets/images/avatar-4.svg',
+            'avatar' => 'assets/images/avatar-4.jpg',
             'quote' => 'Old-school barber pole heritage with the sanitation standards of a premier boutique clinic. Every blade is opened fresh in front of you. Top-tier craftsmanship and honest neighborhood pricing.',
             'cut' => 'VIP Experience & Beard Sculpt'
         ]

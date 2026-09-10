@@ -1,4 +1,4 @@
-﻿<section id="gallery" class="py-20 lg:py-28 bg-[#F5F0E8] relative overflow-hidden">
+<section id="gallery" class="py-20 lg:py-28 bg-[#F5F0E8] relative overflow-hidden">
     <!-- Subtle background embellishment -->
     <div class="absolute top-0 right-1/4 w-96 h-96 bg-[#C9A227]/5 rounded-full blur-3xl pointer-events-none"></div>
     <div class="absolute bottom-0 left-10 w-80 h-80 bg-[#7A1F2B]/5 rounded-full blur-3xl pointer-events-none"></div>
@@ -73,7 +73,7 @@
                     >
                         <div class="relative aspect-[4/3] w-full overflow-hidden bg-stone-900">
                             <img 
-                                src="{{ asset('assets/images/gallery-' . $cut['id'] . '.svg') }}" 
+                                src="{{ asset('assets/images/gallery-' . $cut['id'] . '.jpg') }}" 
                                 alt="{{ $cut['title'] }}" 
                                 class="w-full h-full object-cover transition-transform duration-700 ease-out group-hover:scale-110"
                                 loading="lazy"
@@ -200,6 +200,13 @@
                                 <option value="Barber Jun">Barber Jun (Fade & Lineup Specialist)</option>
                                 <option value="Barber Mark">Barber Mark (Hot Towel Artisan)</option>
                             </select>
+                            <div class="flex items-center gap-2.5 mt-2.5 p-2 bg-stone-900/80 rounded-xl border border-stone-800">
+                                <img src="{{ asset('assets/images/barber-lito.jpg') }}" alt="Master Barber" class="w-8 h-8 rounded-full object-cover ring-2 ring-[#C9A227]">
+                                <div class="text-[11px]">
+                                    <span class="font-bold text-[#F5F0E8] block" x-text="barber"></span>
+                                    <span class="text-[10px] text-[#C9A227]">12+ Years Master Chair Experience</span>
+                                </div>
+                            </div>
                         </div>
 
                         <div>
