@@ -1,4 +1,4 @@
-﻿<footer id="contact" class="bg-[#141211] text-stone-300 border-t border-stone-800 pt-16 pb-12">
+<footer id="contact" class="bg-[#141211] text-stone-300 border-t border-stone-800 pt-16 pb-12">
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-10 pb-14 border-b border-stone-800">
             <!-- Col 1: Shop Brand & Story (4 cols) -->
@@ -89,7 +89,7 @@
                     </p>
                     <p class="flex items-start gap-2">
                         <span class="text-[#C9A227] mt-0.5">&#9873;</span>
-                        <span>142 Dr. Sixto Antonio Ave, Barangay Caniogan, Pasig City, Metro Manila</span>
+                        <span>74 P. Guevarra St., Barangay Santo Angel Norte, Santa Cruz, Laguna</span>
                     </p>
                 </div>
             </div>
@@ -97,7 +97,7 @@
             <!-- Col 4: Map Embed Placeholder (3 cols) -->
             <div class="lg:col-span-3 space-y-2">
                 <h4 class="font-heading font-bold text-base text-[#F5F0E8] uppercase tracking-wider">Find Our Chairs</h4>
-                <p class="text-xs text-stone-400">Near San Antonio De Padua Parish & Rizal High School</p>
+                <p class="text-xs text-stone-400">Near Santa Cruz Town Plaza & Immaculate Conception Parish</p>
 
                 <!-- 
                     GOOGLE MAPS EMBED PLACEHOLDER
@@ -121,7 +121,7 @@
                             <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd" />
                         </svg>
                     </div>
-                    <span class="relative z-10 text-[11px] font-bold text-stone-200">Kuya Lito's Pasig</span>
+                    <span class="relative z-10 text-[11px] font-bold text-stone-200">Kuya Lito's Santa Cruz, Laguna</span>
                     <a 
                         href="https://maps.google.com" 
                         target="_blank" 

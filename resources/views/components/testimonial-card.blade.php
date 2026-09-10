@@ -5,7 +5,7 @@
             'role' => 'Regular Customer, 3 years',
             'rating' => 5,
             'avatar' => 'assets/images/avatar-1.jpg',
-            'quote' => 'Kuya Lito has been cutting my hair since 2021. You will not find this level of razor precision anywhere else in Pasig. The hot towel eucalyptus finish after a taper fade is pure relaxation after a long work week.',
+            'quote' => 'Kuya Lito has been cutting my hair since 2021. You will not find this level of razor precision anywhere else in Santa Cruz, Laguna. The hot towel eucalyptus finish after a taper fade is pure relaxation after a long work week.',
             'cut' => 'Signature Grooming Package'
         ],
         [

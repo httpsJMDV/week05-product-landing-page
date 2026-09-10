@@ -1,4 +1,4 @@
-﻿<header 
+<header 
     x-data="{ scrolled: false, mobileMenuOpen: false }"
     x-init="scrolled = (window.pageYOffset > 20)"
     @scroll.window="scrolled = (window.pageYOffset > 20)"
@@ -24,7 +24,7 @@
                         Kuya Lito's
                     </span>
                     <span class="font-display tracking-[0.25em] text-[10px] text-[#7A1F2B] font-bold uppercase -mt-1">
-                        Barbershop &bull; Manila
+                        Barbershop &bull; Santa Cruz, Laguna
                     </span>
                 </div>
             </a>
@@ -182,7 +182,7 @@
             <div class="mt-4 pt-4 text-xs text-stone-400 text-center space-y-1">
                 <p class="text-[#C9A227] font-semibold">Walk-ins Always Welcome!</p>
                 <p>Mon - Sat: 9:00 AM - 7:00 PM</p>
-                <p>Barangay San Antonio, Pasig City</p>
+                <p>74 P. Guevarra St., Santo Angel Norte, Santa Cruz, Laguna</p>
             </div>
         </div>
     </div>

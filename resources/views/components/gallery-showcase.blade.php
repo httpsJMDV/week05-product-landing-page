@@ -292,7 +292,7 @@
                         <div class="p-4 space-y-3 flex-1 overflow-hidden">
                             <!-- Hero Mini Banner -->
                             <div class="bg-gradient-to-br from-[#2D2022] to-[#1C1917] p-3.5 rounded-xl border border-stone-800 text-center">
-                                <span class="inline-block px-2 py-0.5 text-[8px] font-bold uppercase bg-[#7A1F2B] text-[#F5F0E8] rounded-full mb-1">Pasig City</span>
+                                <span class="inline-block px-2 py-0.5 text-[8px] font-bold uppercase bg-[#7A1F2B] text-[#F5F0E8] rounded-full mb-1">Santa Cruz, Laguna</span>
                                 <p class="font-heading font-bold text-sm text-[#F5F0E8]">Sharp Cuts. Honest Prices.</p>
                                 <p class="text-[10px] text-stone-400 mt-1">Walk-ins always welcome.</p>
                             </div>

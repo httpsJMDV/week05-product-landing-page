@@ -1,4 +1,4 @@
-﻿# Asset Placeholders & Replacement Guide
+# Asset Placeholders & Replacement Guide
 
 This document lists all placeholder assets currently wired into the Kuya Lito's Barbershop project and instructions for replacing them before final production submission.
 
@@ -51,5 +51,5 @@ This document lists all placeholder assets currently wired into the Kuya Lito's 
 
 - **Code Reference:** `resources/views/components/footer.blade.php`
 - **Action:**
-  - Obtain an embed iframe from Google Maps for the actual shop address in Pasig City.
+  - Obtain an embed iframe from Google Maps for the actual shop address in Santo Angel Norte, Santa Cruz, Laguna.
   - Paste the iframe inside the designated container in `resources/views/components/footer.blade.php`.

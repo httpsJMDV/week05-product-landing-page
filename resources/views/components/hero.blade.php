@@ -31,7 +31,7 @@
             <span class="text-xs uppercase tracking-widest text-[#F5F0E8] font-semibold font-sans">
                 Neighborhood Craftsmanship &bull; Est. 2014
             </span>
-            <span class="text-xs px-1.5 py-0.5 rounded bg-[#7A1F2B] text-[#F5F0E8] font-bold">Manila</span>
+            <span class="text-xs px-2 py-0.5 rounded bg-[#7A1F2B] text-[#F5F0E8] font-bold">Santa Cruz, Laguna</span>
         </div>
 
         <!-- 
@@ -49,10 +49,9 @@
             <span class="hero-word inline-block text-[#F5F0E8]">Barbers.</span>
         </h1>
 
-        <!-- Subheadline -->
+        <!-- Subheadline (Human, Grounded, Authentic Copy) -->
         <p class="hero-subheadline mt-6 text-base sm:text-lg md:text-xl text-stone-300 font-sans max-w-2xl leading-relaxed font-normal">
-            Step in for world-class scissor work, razor-sharp fades, and our legendary steaming hot towel finish. 
-            Rooted in neighborhood trust and classic Filipino barber heritage — no appointment rush, walk-ins always welcome.
+            Clean fades, straight-razor detailing, and a proper hot towel finish—done right, every single time. A real neighborhood shop in Santo Angel Norte, Santa Cruz where craftsmanship and consistency come first. Pull up a chair—walk-ins always welcome.
         </p>
 
         <!-- CTAs -->
