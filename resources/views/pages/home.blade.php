@@ -211,112 +211,246 @@
     <!-- Gallery & Showcase Section -->
     <x-gallery-showcase />
 
-    <!-- Pricing Packages Section (3 Tiers) -->
-    <section id="pricing" class="py-20 lg:py-28 bg-[#1C1917] text-[#F5F0E8] relative overflow-hidden">
-        <!-- Subtle leather / texture cues -->
+    <!-- Pricing Packages Section (Modern Professional Bento Layout) -->
+    <section id="pricing" class="py-24 lg:py-32 bg-[#1C1917] text-[#F5F0E8] relative overflow-hidden">
+        <!-- Subtle texture and warm lighting -->
         <div class="absolute inset-0 bg-leather-pattern opacity-40 pointer-events-none"></div>
-        <div class="absolute -top-20 -right-20 w-80 h-80 bg-[#C9A227]/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div class="absolute -bottom-20 -left-20 w-80 h-80 bg-[#7A1F2B]/15 rounded-full blur-3xl pointer-events-none"></div>
+        <div class="absolute top-1/3 left-1/2 -translate-x-1/2 w-[800px] h-[500px] bg-[#C9A227]/5 rounded-full blur-3xl pointer-events-none"></div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-            <!-- Modern Header with Pill Highlights -->
-            <div class="text-center max-w-3xl mx-auto mb-14" data-aos="fade-up">
-                <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#7A1F2B]/30 border border-[#C9A227]/40 text-[#C9A227] text-xs uppercase font-bold tracking-widest mb-4 shadow-sm">
-                    <span class="w-1.5 h-1.5 rounded-full bg-[#C9A227] animate-pulse"></span>
-                    Transparent Rates &bull; Honest Pricing
-                </div>
-                <h2 class="font-heading font-extrabold text-3xl sm:text-4xl md:text-5xl text-[#F5F0E8] tracking-tight leading-[1.15]">
-                    Craft Grooming Packages
-                </h2>
-                <p class="mt-4 text-base sm:text-lg text-stone-300 font-sans leading-relaxed">
-                    Straightforward pricing with no hidden charges. Every package comes with neck cleanup, hot lather razor edging, and artisan pomade styling.
-                </p>
+            <!-- Section Heading using standardized x-section-heading for perfect alignment -->
+            <x-section-heading 
+                eyebrow="Transparent Rates" 
+                title="Craft Grooming Packages"
+                description="Straightforward pricing with no hidden charges. Every package comes with neck cleanup, hot lather razor edging, and artisan pomade styling."
+                :dark="true"
+            />
 
-                <!-- Value Pill Badges -->
-                <div class="mt-6 flex flex-wrap items-center justify-center gap-2.5 text-xs text-stone-300 font-medium">
-                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
-                        <span class="text-[#C9A227]">&#10003;</span> Razor Neckline Cleanup Included
-                    </span>
-                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
-                        <span class="text-[#C9A227]">&#10003;</span> Steamed Lather Edging
-                    </span>
-                    <span class="px-3 py-1 rounded-full bg-stone-900/80 border border-stone-800 flex items-center gap-1.5">
-                        <span class="text-[#C9A227]">&#10003;</span> Pomade / Matte Styling
-                    </span>
+            <!-- Bento Grid: 12 Columns -->
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 sm:gap-8 items-stretch">
+                
+                <!-- Bento Card 1: Signature Grooming (7 Columns on LG - Featured Hero Package) -->
+                <div 
+                    class="lg:col-span-7 bg-[#241F1D] rounded-3xl p-7 sm:p-9 lg:p-10 border-2 border-[#C9A227] shadow-[0_25px_60px_-15px_rgba(201,162,39,0.3)] flex flex-col justify-between group relative overflow-hidden ring-1 ring-[#C9A227]/40"
+                    data-aos="fade-up"
+                    data-aos-delay="100"
+                >
+                    <!-- Top Barber Pole Gold Accent Stripe -->
+                    <div class="absolute top-0 left-0 right-0 h-2 barber-pole-stripe-gold" aria-hidden="true"></div>
+
+                    <div>
+                        <!-- Header & Badges -->
+                        <div class="flex flex-wrap items-center justify-between gap-3 mb-6 pt-1">
+                            <span class="inline-flex items-center gap-1.5 px-4 py-1 rounded-full text-xs font-extrabold uppercase tracking-widest bg-gradient-to-r from-[#C9A227] via-[#E4C364] to-[#C9A227] text-[#1C1917] shadow-md">
+                                ★ MOST BOOKED EXPERIENCE
+                            </span>
+
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-mono font-semibold bg-[#7A1F2B] text-[#F5F0E8] border border-[#C9A227]/40">
+                                <svg class="w-3.5 h-3.5 text-[#C9A227]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <circle cx="12" cy="12" r="10" stroke-width="2"/>
+                                    <polyline points="12 6 12 12 16 14" stroke-width="2"/>
+                                </svg>
+                                <span>55 Mins Chair Time</span>
+                            </span>
+                        </div>
+
+                        <!-- Split Content: Left Details, Right Photo -->
+                        <div class="grid grid-cols-1 sm:grid-cols-12 gap-6 items-center">
+                            <div class="sm:col-span-7 space-y-3">
+                                <h3 class="font-heading font-extrabold text-2xl sm:text-3xl lg:text-4xl text-[#F5F0E8] group-hover:text-[#C9A227] transition-colors">
+                                    Signature Grooming
+                                </h3>
+
+                                <p class="text-sm sm:text-base text-stone-300 font-sans leading-relaxed">
+                                    Our celebrated chair favorite: haircut, steaming eucalyptus shave, post-shave skin therapy, and relaxing scalp massage.
+                                </p>
+
+                                <div class="pt-2 flex items-baseline gap-2">
+                                    <span class="text-2xl font-bold font-heading text-[#C9A227]">₱</span>
+                                    <span class="text-5xl sm:text-6xl font-extrabold font-heading text-[#F5F0E8] tracking-tight">450</span>
+                                    <span class="text-xs text-stone-400 uppercase tracking-widest font-semibold ml-1">/ session &bull; net</span>
+                                </div>
+                            </div>
+
+                            <div class="sm:col-span-5 relative">
+                                <div class="rounded-2xl overflow-hidden aspect-[4/3] shadow-lg border-2 border-stone-700/80 group-hover:border-[#C9A227] transition-colors">
+                                    <img 
+                                        src="{{ asset('assets/images/gallery-4.jpg') }}" 
+                                        alt="Signature Grooming Shave" 
+                                        class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105 filter brightness-90"
+                                    >
+                                    <div class="absolute inset-0 bg-gradient-to-t from-[#241F1D] via-transparent to-transparent"></div>
+                                    <span class="absolute bottom-2.5 left-3 text-[10px] font-bold uppercase tracking-wider text-[#C9A227] bg-black/60 px-2 py-0.5 rounded backdrop-blur-xs">
+                                        Hot Towel + Razor
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Features Checklist Grid -->
+                        <div class="mt-8 pt-6 border-t border-stone-800/80 grid grid-cols-1 sm:grid-cols-2 gap-3 text-xs sm:text-sm text-stone-300">
+                            <div class="flex items-start gap-2.5">
+                                <span class="w-5 h-5 rounded-full bg-[#C9A227]/20 text-[#C9A227] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">&#10003;</span>
+                                <span>Precision Consultation & Fade/Scissor Cut</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="w-5 h-5 rounded-full bg-[#C9A227]/20 text-[#C9A227] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">&#10003;</span>
+                                <span>Steamed Eucalyptus Hot Towel Shave</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="w-5 h-5 rounded-full bg-[#C9A227]/20 text-[#C9A227] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">&#10003;</span>
+                                <span>Cooling Aloe & Post-Shave Botanical Balm</span>
+                            </div>
+                            <div class="flex items-start gap-2.5">
+                                <span class="w-5 h-5 rounded-full bg-[#C9A227]/20 text-[#C9A227] flex items-center justify-center font-bold text-xs flex-shrink-0 mt-0.5">&#10003;</span>
+                                <span>Complimentary Iced Brew or Refreshment</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bottom CTA Action Bar -->
+                    <div class="mt-8 pt-6 border-t border-stone-800/80 flex flex-col sm:flex-row items-center justify-between gap-4">
+                        <div class="text-xs text-stone-400">
+                            <strong class="text-[#C9A227]">Best Value</strong> &bull; Walk-ins welcome &bull; GCash & Cash accepted
+                        </div>
+                        <x-button variant="gold" size="lg" href="#booking-preview" class="w-full sm:w-auto font-bold shadow-xl">
+                            <span>Book Signature Experience</span>
+                            <span class="ml-2">&rarr;</span>
+                        </x-button>
+                    </div>
                 </div>
+
+                <!-- Right Column: Basic Cut + VIP Experience (5 Columns on LG - Stacked 2 Bento Cards) -->
+                <div class="lg:col-span-5 flex flex-col gap-6 sm:gap-8 justify-between">
+                    
+                    <!-- Bento Card 2: Basic Cut (₱250) -->
+                    <div 
+                        class="bg-[#1D1A18] rounded-3xl p-6 sm:p-7 border border-stone-800 shadow-xl hover:border-stone-700 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="200"
+                    >
+                        <div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <div>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#C9A227] block mb-0.5">Everyday Essential</span>
+                                    <h3 class="font-heading font-extrabold text-2xl text-[#F5F0E8] group-hover:text-[#C9A227] transition-colors">
+                                        Basic Cut
+                                    </h3>
+                                    <p class="text-xs text-stone-400 font-sans mt-0.5">Quick, razor-sharp haircut for gentlemen on the go.</p>
+                                </div>
+                                <div class="w-14 h-14 rounded-xl overflow-hidden border border-stone-700 shadow-md flex-shrink-0">
+                                    <img src="{{ asset('assets/images/gallery-1.jpg') }}" alt="Basic Cut" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+
+                            <div class="flex items-baseline justify-between py-2 border-y border-stone-800/80 my-3">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-lg font-bold font-heading text-stone-400">₱</span>
+                                    <span class="text-3xl font-extrabold font-heading text-[#F5F0E8]">250</span>
+                                    <span class="text-[11px] text-stone-400 uppercase font-sans ml-1">/ session</span>
+                                </div>
+                                <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-stone-800 text-stone-300 border border-stone-700">
+                                    ⏱ 30 Mins
+                                </span>
+                            </div>
+
+                            <ul class="space-y-1.5 text-xs text-stone-300 mb-4">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>Precision consultation & clipper/scissor fade</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>Straight-razor neckline cleanup & edging</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>Cooling tonic & artisan pomade styling</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-3 border-t border-stone-800/60 flex items-center justify-between">
+                            <span class="text-[11px] text-stone-400">Walk-ins welcome</span>
+                            <x-button variant="secondary" size="sm" href="#booking-preview" class="hover:border-[#C9A227]">
+                                <span>Book Basic (₱250)</span>
+                                <span class="ml-1.5">&rarr;</span>
+                            </x-button>
+                        </div>
+                    </div>
+
+                    <!-- Bento Card 3: VIP Experience (₱750) -->
+                    <div 
+                        class="bg-[#1D1A18] rounded-3xl p-6 sm:p-7 border border-stone-800 shadow-xl hover:border-stone-700 hover:shadow-2xl transition-all duration-300 flex flex-col justify-between group relative overflow-hidden"
+                        data-aos="fade-up"
+                        data-aos-delay="300"
+                    >
+                        <div>
+                            <div class="flex items-start justify-between gap-3 mb-3">
+                                <div>
+                                    <span class="text-[10px] font-bold uppercase tracking-widest text-[#C9A227] block mb-0.5">Executive Lounge</span>
+                                    <h3 class="font-heading font-extrabold text-2xl text-[#F5F0E8] group-hover:text-[#C9A227] transition-colors">
+                                        VIP Experience
+                                    </h3>
+                                    <p class="text-xs text-stone-400 font-sans mt-0.5">Full head-to-shoulder restoration with priority booking.</p>
+                                </div>
+                                <div class="w-14 h-14 rounded-xl overflow-hidden border border-stone-700 shadow-md flex-shrink-0">
+                                    <img src="{{ asset('assets/images/gallery-5.jpg') }}" alt="VIP Experience" class="w-full h-full object-cover">
+                                </div>
+                            </div>
+
+                            <div class="flex items-baseline justify-between py-2 border-y border-stone-800/80 my-3">
+                                <div class="flex items-baseline gap-1">
+                                    <span class="text-lg font-bold font-heading text-stone-400">₱</span>
+                                    <span class="text-3xl font-extrabold font-heading text-[#F5F0E8]">750</span>
+                                    <span class="text-[11px] text-stone-400 uppercase font-sans ml-1">/ session</span>
+                                </div>
+                                <span class="text-xs font-mono font-semibold px-2.5 py-0.5 rounded-full bg-[#7A1F2B] text-[#F5F0E8] border border-[#C9A227]/30">
+                                    ⏱ 80 Mins
+                                </span>
+                            </div>
+
+                            <ul class="space-y-1.5 text-xs text-stone-300 mb-4">
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>Master cut + double hot/cold towel straight razor shave</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>Deep scalp detox wash & clay facial steam treatment</span>
+                                </li>
+                                <li class="flex items-center gap-2">
+                                    <span class="text-[#C9A227] font-bold">&#10003;</span>
+                                    <span>15-min neck & arm acupressure + priority chair</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="pt-3 border-t border-stone-800/60 flex items-center justify-between">
+                            <span class="text-[11px] text-stone-400">Priority reservation</span>
+                            <x-button variant="secondary" size="sm" href="#booking-preview" class="hover:border-[#C9A227]">
+                                <span>Book VIP (₱750)</span>
+                                <span class="ml-1.5">&rarr;</span>
+                            </x-button>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 items-stretch max-w-7xl mx-auto pt-2">
-                <!-- Tier 1: Basic Cut -->
-                <x-pricing-card 
-                    name="Basic Cut"
-                    price="250"
-                    duration="30 Mins"
-                    description="Quick, razor-sharp neighborhood haircut tailored to your head shape and lifestyle."
-                    image="assets/images/gallery-1.jpg"
-                    :featured="false"
-                    :features="[
-                        'Bespoke consultation & master clipper / scissor cut',
-                        'Straight-razor neckline cleanup & crisp edging',
-                        'Cooling botanical tonic splash & blow dry finish',
-                        'Light water-based pomade or matte wax styling',
-                        'Sanitized single-use razor blade guaranteed'
-                    ]"
-                    delay="100"
-                />
-
-                <!-- Tier 2: Signature Grooming (Most Popular, Elevated, Gold Accent) -->
-                <x-pricing-card 
-                    name="Signature Grooming"
-                    price="450"
-                    duration="55 Mins"
-                    description="Our celebrated chair favorite: full precision cut, steaming shave, and soothing scalp relaxation."
-                    image="assets/images/gallery-4.jpg"
-                    :featured="true"
-                    badge="Most Booked"
-                    :features="[
-                        'Everything in the Basic Cut package',
-                        'Steamed eucalyptus aromatic hot towel therapy',
-                        'Traditional straight-razor cheek & beard lineup shave',
-                        'Soothing post-shave aloe balm & alcohol-free toner',
-                        'Relaxing 5-minute shoulder & neck tension acupressure',
-                        'Complimentary iced brew or refreshment'
-                    ]"
-                    delay="200"
-                />
-
-                <!-- Tier 3: VIP Experience -->
-                <x-pricing-card 
-                    name="VIP Lounge Experience"
-                    price="750"
-                    duration="80 Mins"
-                    description="Complete head-to-shoulder executive restoration package with priority chair booking."
-                    image="assets/images/gallery-5.jpg"
-                    :featured="false"
-                    :features="[
-                        'Master Barber bespoke haircut & textured scissor layering',
-                        'Full straight-razor double hot & cold towel shave',
-                        'Deep scalp detox wash & revitalizing conditioning treatment',
-                        'Facial steam, clay pore treatment & hydrating moisturizer',
-                        'Extended 15-minute head, neck & arm acupressure massage',
-                        'Guaranteed priority chair reservation & beverage of choice'
-                    ]"
-                    delay="300"
-                />
-            </div>
-
-            <!-- Guarantee & Transparency Banner -->
-            <div class="mt-14 max-w-5xl mx-auto rounded-3xl bg-stone-900/90 border border-stone-800 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden" data-aos="fade-up">
+            <!-- Full-Width Transparency & Finishing Guarantee Banner -->
+            <div class="mt-14 rounded-3xl bg-stone-900/90 border border-stone-800 p-6 sm:p-8 flex flex-col md:flex-row items-center justify-between gap-6 shadow-2xl relative overflow-hidden" data-aos="fade-up">
                 <div class="flex items-center gap-4 text-left">
                     <div class="w-12 h-12 rounded-2xl bg-[#7A1F2B] text-[#C9A227] flex items-center justify-center text-xl font-bold flex-shrink-0 shadow-md">
                         💈
                     </div>
                     <div>
-                        <h4 class="font-heading font-extrabold text-base sm:text-lg text-[#F5F0E8]">Every Package Includes Full Finishing Service</h4>
+                        <h4 class="font-heading font-extrabold text-base sm:text-lg text-[#F5F0E8]">Every Session Includes Full Finishing Service</h4>
                         <p class="text-xs sm:text-sm text-stone-400 font-sans mt-0.5">Straight-razor neck taper, warm lather shave, cooling botanical tonic, and artisan pomade styling.</p>
                     </div>
                 </div>
-                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-4 text-xs font-semibold text-stone-300 flex-shrink-0 pt-2 md:pt-0 border-t md:border-t-0 border-stone-800 w-full md:w-auto">
+                <div class="flex flex-wrap items-center justify-center sm:justify-end gap-3 text-xs font-semibold text-stone-300 flex-shrink-0 w-full md:w-auto">
                     <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-800 text-stone-200 border border-stone-700">
                         <strong class="text-[#C9A227]">&#10003;</strong> No Hidden Charges
                     </span>
@@ -324,7 +458,7 @@
                         <strong class="text-[#C9A227]">&#10003;</strong> GCash / Maya / Cash
                     </span>
                     <span class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-stone-800 text-[#C9A227] border border-[#C9A227]/30">
-                        <strong>10% OFF</strong> Senior & Student Weekday Mornings
+                        <strong>10% OFF</strong> Senior & Student Mornings
                     </span>
                 </div>
             </div>
